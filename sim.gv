@@ -1,0 +1,10 @@
+digraph DFA {
+    rankdir=LR;
+    node [shape=circle];
+    "M2" [shape=doublecircle];
+    "" [shape=none];
+    "" -> "M0";
+    "M0" -> "M1" [label="a", color="red", fontcolor="red", penwidth=2.0];
+    "M1" -> "M2" [label="b"];
+    "M2" -> "M2" [label="b"];
+}
